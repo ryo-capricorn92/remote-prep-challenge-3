@@ -62,3 +62,8 @@ function map(array, func) {
 3. Write a function called `wordsLongerThanThree` using `filter` that, given a
    **string** as input, returns an **array** of the words in the original string
    that are longer than three (have `length` greater than three).
+
+```js
+wordsLongerThanThree("The quick brown fox jumps over the lazy dog.")
+// => [ "quick", "brown", "jumps", "over", "lazy" ]
+```
