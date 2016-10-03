@@ -17,14 +17,6 @@ function each(array, func) {
   }
 }
 
-function reduce(array, func, start) {
-  var acc = start;
-  each(array, function(element, i) {
-    acc = func(acc, element, i);
-  });
-  return acc;
-}
-
 function filter(array, predicate) {
   var acc = [];
   each(array, function(element, i) {
@@ -70,17 +62,3 @@ function map(array, func) {
 3. Write a function called `wordsLongerThanThree` using `filter` that, given a
    **string** as input, returns an **array** of the words in the original string
    that are longer than three (have `length` greater than three).
-
-4. Write a function called `concat` that takes two arrays as parameters and
-   returns an **array** with all of the elements of the second one added to the
-   first one -- your implementation should use `reduce`. It should work like
-   this:
-
-   ```js
-   function concat(arr1, arr2) {
-     // ...
-   }
-   concat([1, 2, 3], [4, 5, 6]); // => [1, 2, 3, 4, 5, 6]
-   concat([], [3, 4, 5]); // => [3, 4, 5]
-   concat([], []); // => []
-   ```
