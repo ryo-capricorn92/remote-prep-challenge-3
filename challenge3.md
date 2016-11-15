@@ -50,8 +50,8 @@ function map(array, func) {
      }
      return acc;
    }
-   wordLengths("The quick brown fox jumps over the lazy dog.")
-   // => [ 3, 5, 5, 3, 5, 4, 3, 4, 4 ]
+   wordLengths("The quick brown fox jumps over the lazy dog")
+   // => [ 3, 5, 5, 3, 5, 4, 3, 4, 3 ]
    ```
 
 2. `wordLengths` involves *transforming* every word into its length, which makes
