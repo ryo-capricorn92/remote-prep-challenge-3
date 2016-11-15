@@ -64,6 +64,6 @@ function map(array, func) {
    that are longer than three (have `length` greater than three).
 
     ```js
-    wordsLongerThanThree("The quick brown fox jumps over the lazy dog.")
+    wordsLongerThanThree("The quick brown fox jumps over the lazy dog")
     // => [ "quick", "brown", "jumps", "over", "lazy" ]
     ```
